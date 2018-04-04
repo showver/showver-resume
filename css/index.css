@@ -21,6 +21,7 @@
 */
 #infoBox{
     display: flex;
+    flex-flow: row wrap;
     justify-content: space-around;
     width: 100%;
     min-height: 700px;
@@ -86,7 +87,7 @@
 #infoBox .infoContent{
     border-top: 1px dashed #00BCD4;
     padding-top: 22px;
-    font-size: 16px;
+    font-size: 0.8rem;
     font-weight: bold;
 }
 #infoBox .infoContent p{
@@ -106,15 +107,24 @@
     margin: 0 5%;
     font-size: 15px
 }
-#psDetail,#bgDetail{
+#psDetail{
     display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+#bgDetail{
+    display: flex;
+    flex-flow: row-reverse wrap;
     justify-content: space-around;
 }
 #detailBox section > img{
-    width: 48%;
+    width: 100%;
 }
 #detailBox section > div{
-    width: 44%;
+    width: 50%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
 }
 #detailBox section > div h3{
     font-size: 28px;
@@ -124,11 +134,10 @@
 }
 #detailBox section > div p{
     display: inline-block;
-    height: 25px;
-    line-height: 25px;
     text-indent: 2em;
+    line-height: 25px;
     color: gray;
-    margin-top: 20px;
+    margin-top: 10px;
 }
 
 /* 
@@ -142,17 +151,18 @@
 }
 #skillBoxContent{
     width: 70%;
+    min-width: 520px;
     height: 400px;
     margin: 0 auto;
 }
-.skillBoxContent li{
+/* .skillBoxContent li{
     display: inline-block;
     width: 100px;
     height: 20px;
     line-height: 20px;
     list-style: square;
     margin-top: 18px;
-}
+} */
 
 /* 
 ***************** 项目作品板块 **********************
@@ -170,19 +180,20 @@
     text-align: center;
 }
 #projectBox section{
-    width: 88%;
-    margin: 0 auto;
+    width: 80%;
+    margin: 20px auto;
 }
 .projectBoxItem{
     float: left;
-    width: 33%;
-    margin-top: 20px;
-    margin-left: 0.5%;
+    width: 32%;
+    margin-right: 2%;
 }
 .projectBoxItem:nth-child(3n){
-    margin-left: 0;
+    margin-right: 0;
 }
 .projectBoxItem img{
+    width: 100%;
+    margin-bottom: 20px;
 }
 
 /* 
@@ -190,8 +201,8 @@
 */
 #contact{
     clear: both;
-    height: 150px;
-    padding: 80px;
+    /* height: 150px; */
+    padding: 40px 60px;
     background: black;
     color: white;
     font-size: 14px;
@@ -204,6 +215,7 @@
 }
 #contact .contactItem{
     width: 33%;
+    /* border: 1px solid white; */
 }
 #contact .contactItem div{
     display: flex;
@@ -213,9 +225,9 @@
 #contact .contactItem i{
     border-radius: 50%;
     background: #FBA80C;
-    width: 70px;
-    height: 70px;
-    line-height: 70px;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
     font-size: 20px;
     text-align: center; 
 }
@@ -224,15 +236,17 @@
     color: gray;
 }
 #contact .contactItem h4{
-    font-size: 18px;
+    font-size: 16px;
     text-align: center;
-    margin: 10px 0;
+    margin: 5px 0;
 }
 #contact .contactItem p{
     color: gray;
     text-align: center;
+    font-size: 12px;
 }
 #contact > p{
-    margin-top: 50px;
+    margin-top: 30px;
     text-align: center;
 }
+
