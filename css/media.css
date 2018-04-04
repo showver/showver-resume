@@ -118,8 +118,8 @@
 
     /* 联系我 */
     #contact .contactItem{
-    width: 33%;
-}
+        width: 33%;
+    }
 }
 @media screen and (min-width: 768px) and (max-width: 991.99px){
 

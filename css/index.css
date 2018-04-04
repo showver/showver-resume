@@ -117,9 +117,6 @@
     flex-flow: row-reverse wrap;
     justify-content: space-around;
 }
-#detailBox section > img{
-    width: 100%;
-}
 #detailBox section > div{
     width: 50%;
     display: flex;
@@ -151,7 +148,8 @@
 }
 #skillBoxContent{
     width: 70%;
-    min-width: 520px;
+    /* min-width: 520px; */
+    min-width: 320px;
     height: 400px;
     margin: 0 auto;
 }
@@ -162,7 +160,7 @@
     line-height: 20px;
     list-style: square;
     margin-top: 18px;
-} */
+} */ 
 
 /* 
 ***************** 项目作品板块 **********************
