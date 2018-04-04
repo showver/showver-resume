@@ -123,6 +123,9 @@
     flex-flow: row wrap;
     justify-content: center;
 }
+#detailBox section > img{
+    width: 100%;   
+}
 #detailBox section > div h3{
     font-size: 28px;
     font-weight: bold;
