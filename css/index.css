@@ -1,0 +1,238 @@
+/* 
+***************** 预设板块 **********************
+*/
+.page{
+    width: 100%;
+}
+.headerTitle{
+    color: #00BCD4;
+    font-size: 38px;
+    font-weight: bold;
+    text-align: center;
+    padding: 50px 0;
+}
+.active{
+    color: #00BCD4;
+    border-bottom: 2px solid #00BCD4;
+}
+
+/* 
+***************** 简介板块 **********************
+*/
+#infoBox{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    min-height: 700px;
+    background: url(../image/banner.jpg) no-repeat;
+    background-size: cover;
+}
+#infoBox .avatar{
+    width: 40%;
+    position: relative;
+}
+#infoBox .avatar div{
+    width: 400px;
+    height: 400px;
+    border: 4px solid white;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+#infoBox .avatar img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-top: 70px;
+    margin-bottom: 10px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+#infoBox .avatar p{
+    font-size: 18px;
+    color: #F9A300;
+    margin-top: 50px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+#infoBox .info{
+    width: 50%;
+    position: relative;
+}
+#infoBox .info > div{
+    width: 100%;
+    height: 400px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    color: white;
+}
+#infoBox .infoHeader{
+    margin: 30px 0;
+}
+#infoBox .infoHeader h3{
+    font-size: 32px;
+    font-weight: bold;
+}
+#infoBox .infoHeader p{
+    color: rgba(255, 255, 255, 0.8);
+    margin: 15px 0;
+}
+#infoBox .infoContent{
+    border-top: 1px dashed #00BCD4;
+    padding-top: 22px;
+    font-size: 16px;
+    font-weight: bold;
+}
+#infoBox .infoContent p{
+    margin-bottom: 24px;
+    display: flex;
+    justify-content: flex-start;
+}
+#infoBox .infoContent span:first-child{
+    width: 20%;
+    min-width: 100px;
+}
+
+/* 
+***************** 主页板块 **********************
+*/
+#detailBox{
+    margin: 0 5%;
+    font-size: 15px
+}
+#psDetail,#bgDetail{
+    display: flex;
+    justify-content: space-around;
+}
+#detailBox section > img{
+    width: 48%;
+}
+#detailBox section > div{
+    width: 44%;
+}
+#detailBox section > div h3{
+    font-size: 28px;
+    font-weight: bold;
+    color: #FDB837;
+    margin-top: 40px;
+}
+#detailBox section > div p{
+    display: inline-block;
+    height: 25px;
+    line-height: 25px;
+    text-indent: 2em;
+    color: gray;
+    margin-top: 20px;
+}
+
+/* 
+***************** 职业技能板块 **********************
+*/
+#skillBox{
+    width: 100%;
+    height: 600px;
+    background: url('../image/skill.jpg') no-repeat;
+    background-size: cover;
+}
+#skillBoxContent{
+    width: 70%;
+    height: 400px;
+    margin: 0 auto;
+}
+.skillBoxContent li{
+    display: inline-block;
+    width: 100px;
+    height: 20px;
+    line-height: 20px;
+    list-style: square;
+    margin-top: 18px;
+}
+
+/* 
+***************** 项目作品板块 **********************
+*/
+#projectBox{
+    
+}
+#projectBox ul{
+    display: flex;
+    justify-content: space-around;
+    margin: 0 30%;
+}
+#projectBox ul li{
+    padding: 10px;
+    text-align: center;
+}
+#projectBox section{
+    width: 88%;
+    margin: 0 auto;
+}
+.projectBoxItem{
+    float: left;
+    width: 33%;
+    margin-top: 20px;
+    margin-left: 0.5%;
+}
+.projectBoxItem:nth-child(3n){
+    margin-left: 0;
+}
+.projectBoxItem img{
+}
+
+/* 
+***************** 联系我板块 **********************
+*/
+#contact{
+    clear: both;
+    height: 150px;
+    padding: 80px;
+    background: black;
+    color: white;
+    font-size: 14px;
+}
+#contact > div{
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+#contact .contactItem{
+    width: 33%;
+}
+#contact .contactItem div{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+#contact .contactItem i{
+    border-radius: 50%;
+    background: #FBA80C;
+    width: 70px;
+    height: 70px;
+    line-height: 70px;
+    font-size: 20px;
+    text-align: center; 
+}
+#contact .contactItem i:hover{
+    background: #ffffff;
+    color: gray;
+}
+#contact .contactItem h4{
+    font-size: 18px;
+    text-align: center;
+    margin: 10px 0;
+}
+#contact .contactItem p{
+    color: gray;
+    text-align: center;
+}
+#contact > p{
+    margin-top: 50px;
+    text-align: center;
+}
