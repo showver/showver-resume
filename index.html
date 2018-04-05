@@ -53,8 +53,11 @@
                     <h3>个人介绍</h3>
                     <p>欢迎查看我的介绍！我是余晓威，前端领域用名showver。非常喜欢前端，毕业之后会从事前端行业，现面临找工作问题，正在努力学习前端。于此同时，我也是前端小白，渴望大牛的指点，让我能够更加自信的立足于前端。</p>
                     <h3>自我认知</h3>
-                    <div>
-                    <p>欢迎查看我的介绍！我是余晓威，前端领域用名showver。非常喜欢前端，毕业之后会从事前端行业，现面临找工作问题，正在努力学习前端。于此同时，我也是前端小白，渴望大牛的指点，让我能够更加自信的立足于前端。</p>
+                    <div class="rzContent">
+                        
+                        <span><i class="fa fa-mortar-board"></i>学者型</span>
+                        <span><i class="fa fa-gamepad"></i>技术宅</span>
+                        <span><i class="fa fa-lightbulb-o"></i>想法多</span>    
                     </div>
                 </div>
             </section>
@@ -92,27 +95,24 @@
         <!-- 项目作品 -->
         <div id="projectBox"> 
             <h3 class="headerTitle">项目作品</h3>
-            <ul>
+            <!-- <ul>
                 <li class="active"><a href="">项目</a></li>
                 <li><a href="">HTML5</a></li>
                 <li><a href="">CSS3</a></li>
                 <li><a href="">JS</a></li>
-            </ul>
+            </ul> -->
             <section>
                 <div class="projectBoxItem">
-                    <img src="./image/ab1.jpg" alt="aib云平台">
+                    <a href="http://aibcloud.org/" hidden>aib云平台</a>
+                    <img src="./image/g1.jpg" alt="aib云平台">
                 </div>
                 <div class="projectBoxItem">
-                    <img src="./image/ab1.jpg" alt="aib云平台">
+                    <a href="http://showver.cn/" hidden>sunny校园递</a>
+                    <img src="./image/g2.jpg" alt="sunny校园递">
                 </div>
                 <div class="projectBoxItem">
-                    <img src="./image/ab1.jpg" alt="aib云平台">
-                </div>
-                <div class="projectBoxItem">
-                    <img src="./image/ab1.jpg" alt="aib云平台">
-                </div>
-                <div class="projectBoxItem">
-                    <img src="./image/ab1.jpg" alt="aib云平台">
+                    <a href="http://showver.site/" hidden>myblog博客</a>
+                    <img src="./image/g3.jpg" alt="myblog博客">
                 </div>
             </section>
         </div>
@@ -150,6 +150,7 @@
     <script src="https://cdn.bootcss.com/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://cdn.bootcss.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <script src="./js/echarts.simple.min.js"></script>
+    <script src="./js/index.js"></script>
     <script type="text/javascript">
         // 基于准备好的dom，初始化echarts实例
         var myChart = echarts.init(document.getElementById('skillBoxContent'));

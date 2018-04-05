@@ -111,11 +111,13 @@
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
+    margin-bottom: 40px;
 }
 #bgDetail{
     display: flex;
     flex-flow: row-reverse wrap;
     justify-content: space-around;
+    margin-bottom: 40px;
 }
 #detailBox section > div{
     width: 50%;
@@ -138,6 +140,28 @@
     line-height: 25px;
     color: gray;
     margin-top: 10px;
+}
+#psDetail .rzContent{
+    width: 100%;
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #FDB837;
+}
+#psDetail .rzContent span{
+    width: 33.3%;
+    font-size: 25px;
+    color: #FDB837;
+    padding: 20px 10px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+#psDetail .rzContent i{
+    padding: 0 10px 10px 10px;
+}
+#psDetail .rzContent i:last-child{
+    font-size: 30px;
 }
 
 /* 
@@ -185,12 +209,29 @@
     margin: 20px auto;
 }
 .projectBoxItem{
+    position: relative;
     float: left;
     width: 32%;
     margin-right: 2%;
 }
 .projectBoxItem:nth-child(3n){
     margin-right: 0;
+}
+.projectBoxItem a{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding: 15px 20px;
+    width: 100px;
+    border-radius: 15px;
+    text-align: center;
+    color: white;
+    background: #FDB837;
+}
+.projectBoxItem a:hover{
+    color: #FDB837;
+    background: #ffffff;
 }
 .projectBoxItem img{
     width: 100%;
